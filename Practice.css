@@ -1,0 +1,193 @@
+body{
+    margin: 0px;
+    background-color: aqua;
+}
+.navbar{
+    display: inline-block;
+    margin-right: 1%;
+    margin-left: 15px;
+    text-decoration: none;
+}
+#logo{
+    width: 50px;
+    margin-right: 60%;
+    border-radius: 10px;
+}
+#greeting{
+    font-size: larger;
+    display: flex;
+    align-items:center;
+    margin-left: 1%;
+}
+#webPic{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+#about{
+    font-size: x-large;
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+#services{
+    text-align: center;
+}
+#serviceNo{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 10%;
+    gap: 20%;
+    #ser{
+        border-radius: 15px;
+        width: 250px;
+    }
+    animation-name: service_animation;
+    animation-duration: 2.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+#contact{
+    font-size: large;
+    text-align: center;
+    margin-top: 50px;
+    #contactButton{
+        width: 100px;
+        text-decoration: none;
+    }
+}
+/*Making animation for services option*/
+
+@keyframes service_animation{
+    from{
+        margin-left: 5%;
+        gap: 20%;
+    }
+    to{
+        margin-left: 10%;
+        gap: 20px;
+    }
+}
+
+
+/*Making responsive for pad*/
+
+@media(max-width:810px){
+    body{
+        background-color: aqua;
+    }
+    .navbar{
+        display: inline-block;
+        margin-right: 1%;
+        margin-left: 15px;
+        text-decoration: none;
+    }
+    #logo{
+        width: 50px;
+        margin-right: 50%;
+        border-radius: 10px;
+    }
+    #webPic{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 10%;
+    }
+    #about{
+        font-size: x-large;
+    }
+    #serviceNo{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 25px;
+    #ser{
+        width: 200px;
+        border-radius: 15px;
+    }
+    animation-name: service_animation;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    }
+    /*Making animation for services option*/
+
+    @keyframes service_animation{
+        from{
+            gap: 25px;
+        }
+        to{
+            margin-left: 65px;
+            gap: 5px;
+        }
+    }
+}
+
+/*Making fesponsive for mobile phone*/
+
+@media(max-width:428px){
+    body{
+        background-color: aqua;
+    }
+    #logo{
+    width: 50px;
+    margin-right: 15px;
+    border-radius: 10px;
+    }
+    .navbar{
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    }
+    #webPic{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 10%;
+    }
+    #serviceNo{
+    display: flex;
+    margin-left: 2%;
+    margin-right: 1%;
+    gap: 25px;
+    #ser{
+        width: 100px;
+        border-radius: 15px;
+    }
+    animation-name: service_animation;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    }
+    /*Making animation for services option*/
+
+    @keyframes service_animation{
+        from{
+            gap: 25px;
+        }
+        to{
+            margin-left: 30px;
+            gap: 1px;
+        }
+    }
+}
